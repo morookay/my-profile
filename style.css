@@ -1,0 +1,191 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: hsl(0, 0%, 100%);
+    background-attachment: fixed;
+}
+
+p {
+    font-size: 13px;
+    color: #424242;
+}
+
+.main-class {
+    position: relative;
+    z-index: 2;
+}
+
+.my-picture {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-wrapper {
+    position: relative;
+    max-width: 480px;
+    margin: 60px auto 60px;
+}
+
+.profile-head {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-name {
+    font-size: 20px;
+    color: #424242;
+}
+
+.content {
+    max-width: 480px;
+    margin: 40px auto;
+}
+
+@media screen and (max-width:1024px) {
+    .content {
+      max-width: 699px;
+    }
+  }
+
+@media screen and (max-width:480px) {
+    .content {
+      max-width: 350px;
+    }
+  }
+
+.btn-wrapper {
+    margin-bottom: 15px;
+}
+/*ボタン*/
+.btn05{
+    position: relative;
+    display: inline-block;
+    color: #333; 
+    padding: 10px 20px;
+    background:rgba(255, 255, 255, 0.93);
+    opacity: 0.7;
+    text-decoration: none;
+    outline: none;
+    transition: all .3s;
+    transition-delay: .2s;
+    width: 100%;
+}
+.btn05:hover{
+  background:#55c5e0;
+  color: #fff;
+}
+.btn05 span{
+    display: block;
+}
+/*横線*/
+.btn05::before,
+.btn05::after{
+    content:""; 
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #153138;
+    transition: all 0.2s linear;
+}
+/*縦線*/
+.btn05 span::before,
+.btn05 span::after{
+    content:"";
+    position: absolute;
+    width:1px;
+    height:0;
+    background: #153138;
+    transition: all 0.2s linear;
+}
+.btn05:hover::before,
+.btn05:hover::after{
+    width: 100%;
+}
+.btn05:hover span::before,
+.btn05:hover span::after{
+    height: 100%;
+}
+.bordercircle3::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+.bordercircle3 span::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+.bordercircle3::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+.bordercircle3 span::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+
+.btn-content-wrapper {
+    display: flex;
+}
+
+.icon-wrapper {
+    margin: 12px;
+}
+.note-icon-wrapper {
+    margin: 9px 2px 9px 10px;
+}
+
+
+.btn-title {
+    font-size: 16px;
+    margin: auto;
+    align-items: center;
+}
+
+.note-icon {
+    border-radius: 50%;
+    border: solid 1px #333;
+    background-color: rgba(255, 255, 255, 0.93);
+}
+
+.tag-wrapper {
+    box-sizing: border-box;
+    flex-wrap:wrap;
+    text-align:  center;
+    margin-top: 30px;
+}
+
+.tag {
+	display: inline-block;
+	margin: 3px;
+	padding: .6em;
+	line-height: 1;
+	text-decoration: none;
+	color: #424242;
+	background-color: #fff;
+    opacity: 0.8;
+	border: 1px solid #424242;
+	border-radius: 2em;
+    font-size: 13px;
+}
+.tag:before {
+	content: "#";	
+}
