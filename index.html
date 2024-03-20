@@ -10,36 +10,54 @@
     <script src="https://kit.fontawesome.com/c1109eb99c.js" crossorigin="anonymous"></script>
     <link href="all.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+
     <main class="main-class">
         <section class="profile-wrapper">
             <div class="profile-head">
-                <img src="myPicture.png" class="my-picture" alt="プロフィール画像" width="130px" height="130px">
-                <h1 class="my-name">Yuiko Morooka</h1>
-                <p>CS Ops</p>
-                <div class="tag-wrapper">
-                    <div class="tag">カスタマーサクセス</div>
-                    <div class="tag">カスタマーサポート</div>
-                    <div class="tag">Ops</div>
-                    <div class="tag">ダッシュボード構築</div>
-                    <div class="tag">データ分析</div>
-                    <div class="tag">テックタッチ</div>
-                    <div class="tag">ヘルススコア</div>
-                    <div class="tag">ヘルプページ構築</div>
-                    <div class="tag">オンラインイベント運営</div>
-                    <div class="tag">ライティング</div>
-                    <div class="tag">自動化</div>
-                    <div class="tag">Salesforce Admin</div>
-                    <div class="tag">GAS</div>
-                    <div class="tag">SQL/SOQL</div>
-                    <div class="tag">HTML/CSS</div>
-                    <div class="tag">TypeScripst 勉強中...</div>
+                        <div id="qr-code" class="qr-icon">
+                            <i class="fa-solid fa-qrcode fa-2x"></i>
+                        </div>
+            <div id="modal-container">
+                <div class="modal-background">
+                  <div class="modal">
+                    <h2>SCAN ME！</h2>
+
+                    <img src="qr-code.png" class="qr-code-wrapper" width="200px">
+
+                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                              <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                            </svg>
+                  </div>
                 </div>
+              </div>
+
+            <img src="myPicture.png" class="my-picture" alt="プロフィール画像" width="130px" height="130px">
+            <h1 class="my-name">Yuiko Morooka</h1>
+            <p>CS Ops</p>
+            <div class="tag-wrapper">
+                <div class="tag">カスタマーサクセス</div>
+                <div class="tag">カスタマーサポート</div>
+                <div class="tag">Ops</div>
+                <div class="tag">ダッシュボード構築</div>
+                <div class="tag">データ分析</div>
+                <div class="tag">テックタッチ</div>
+                <div class="tag">ヘルススコア</div>
+                <div class="tag">ヘルプページ構築</div>
+                <div class="tag">オンラインイベント運営</div>
+                <div class="tag">ライティング</div>
+                <div class="tag">自動化</div>
+                <div class="tag">Salesforce Admin</div>
+                <div class="tag">GAS</div>
+                <div class="tag">SQL/SOQL</div>
+                <div class="tag">HTML/CSS</div>
+                <div class="tag">TypeScripst 勉強中...</div>
+            </div>
             </div>
         </section>
         <section class="content">
@@ -51,7 +69,7 @@
                                 <i class="fa-brands fa-square-x-twitter fa-3x"></i>
                             </div>
                             <div class="btn-title">
-                                Follow me!&nbsp;&nbsp;&nbsp;@mororo_yui
+                                Follow me!
                             </div>
                         </div>
                     </span>
@@ -76,7 +94,7 @@
                     <span>
                         <div class="btn-content-wrapper">
                             <div class="icon-wrapper">
-                                <i class="fa-brands fa-facebook fa-3x" style="color:royalblue;"></i>
+                                <i class="fa-brands fa-facebook fa-3x"></i>
                             </div>
                             <div class="btn-title">
                                 Facebook
@@ -104,7 +122,7 @@
                     <span>
                         <div class="btn-content-wrapper">
                             <div class="icon-wrapper">
-                                <i class="fa-brands fa-linkedin fa-3x" style="color: #306DBE;"></i>
+                                <i class="fa-brands fa-linkedin fa-3x"></i>
                             </div>
                             <div class="btn-title">
                                 Linked in
@@ -116,6 +134,7 @@
         </section>
 
     </main>
+    <script src="modal.js"></script>
 </body>
 
 </html>
