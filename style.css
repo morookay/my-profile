@@ -113,6 +113,7 @@ p {
     width: 100%;
     border: solid 1px #333;
 }
+@media screen and (min-width:1024px) {
 .btn05:hover {
   background:#55c5e0;
   color: #fff; 
@@ -167,6 +168,7 @@ p {
     left: 0;
     top: 0;
     transition-duration: 0.4s;
+}
 }
 
 .btn-content-wrapper {
