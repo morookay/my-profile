@@ -13,6 +13,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bungee+Inline&family=Bungee+Outline&family=Londrina+Outline&family=Moirai+One&family=Oxanium:wght@200..800&family=Ultra&family=Vast+Shadow&display=swap"
+        rel="stylesheet">
+<!-- 背景 -->
+    <div id="video-area">
+        <video id="video" poster="background.png" webkit-playsinline playsinline muted autoplay loop>
+            <!--
+              poster：動画ファイルが利用できない環境で代替表示される画像
+              webkit-playsinline：iOS 9までのSafari用インライン再生指定
+              playsinline：iOS 10以降のSafari用インライン再生指定
+              muted：音声をミュートさせる
+              autoplay：動画を自動再生させる
+              loop：動画をループさせる
+              controls：コントロールバーを表示する
+          -->
+            <source src="background.mp4" type="video/mp4">
+            <p>動画を再生できる環境ではありません。</p>
+        </video>
+    </div>
 </head>
 
 <body>
@@ -20,44 +42,45 @@
     <main class="main-class">
         <section class="profile-wrapper">
             <div class="profile-head">
-                        <div id="qr-code" class="qr-icon">
-                            <i class="fa-solid fa-qrcode fa-2x"></i>
-                        </div>
-            <div id="modal-container">
-                <div class="modal-background">
-                  <div class="modal">
-                    <h2>SCAN ME！</h2>
-
-                    <img src="qr-code.png" class="qr-code-wrapper" width="200px">
-
-                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
-                              <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
-                            </svg>
-                  </div>
+                <div id="qr-code" class="qr-icon">
+                    <i class="fa-solid fa-qrcode fa-2x"></i>
                 </div>
-              </div>
+                <div id="modal-container">
+                    <div class="modal-background">
+                        <div class="modal">
+                            <h2>SCAN ME！</h2>
 
-            <img src="myPicture.png" class="my-picture" alt="プロフィール画像" width="130px" height="130px">
-            <h1 class="my-name">Yuiko Morooka</h1>
-            <p>CS Ops</p>
-            <div class="tag-wrapper">
-                <div class="tag">カスタマーサクセス</div>
-                <div class="tag">カスタマーサポート</div>
-                <div class="tag">Ops</div>
-                <div class="tag">ダッシュボード構築</div>
-                <div class="tag">データ分析</div>
-                <div class="tag">テックタッチ</div>
-                <div class="tag">ヘルススコア</div>
-                <div class="tag">ヘルプページ構築</div>
-                <div class="tag">オンラインイベント運営</div>
-                <div class="tag">ライティング</div>
-                <div class="tag">自動化</div>
-                <div class="tag">Salesforce Admin</div>
-                <div class="tag">GAS</div>
-                <div class="tag">SQL/SOQL</div>
-                <div class="tag">HTML/CSS</div>
-                <div class="tag">TypeScripst 勉強中...</div>
-            </div>
+                            <img src="qr-code.png" class="qr-code-wrapper" width="200px">
+
+                            <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                preserveAspectRatio="none">
+                                <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="myPicture.png" class="my-picture" alt="プロフィール画像" width="130px" height="130px">
+                <h1 class="title">Yuiko Morooka</h1>
+                <p>CS Ops</p>
+                <div class="tag-wrapper">
+                    <div class="tag">カスタマーサクセス</div>
+                    <div class="tag">カスタマーサポート</div>
+                    <div class="tag">Ops</div>
+                    <div class="tag">ダッシュボード構築</div>
+                    <div class="tag">データ分析</div>
+                    <div class="tag">テックタッチ</div>
+                    <div class="tag">ヘルススコア</div>
+                    <div class="tag">ヘルプページ構築</div>
+                    <div class="tag">オンラインイベント運営</div>
+                    <div class="tag">ライティング</div>
+                    <div class="tag">自動化</div>
+                    <div class="tag">Salesforce Admin</div>
+                    <div class="tag">GAS</div>
+                    <div class="tag">SQL/SOQL</div>
+                    <div class="tag">HTML/CSS</div>
+                    <div class="tag">TypeScripst 勉強中...</div>
+                </div>
             </div>
         </section>
         <section class="content">
@@ -132,10 +155,37 @@
                 </a>
             </div>
         </section>
-
+        <section class="carrer">
+            <div class="title-wrapper">
+                <h1 class="title">About Me...</h1>
+            </div>
+            <div class="carrer-wrapper">
+                <div class="year">2024</div>
+                <div class="position">Customer Success Operations</div>
+                <div class="discription">株式会社Faciloにて、CS Opsに従事。ヘルプページ構築、テックタッチ運用、オンラインセミナー運営、データ活用全般、自動化などのようなCS及びカスタマーサポートチームが最大限パフォーマンスが発揮できるような基盤作りを行なっている。
+                </div>
+            </div>
+            <div class="carrer-wrapper">
+                <div class="year">2021</div>
+                <div class="position">Customer Support Mgr.<br>Biz Ops<br>Product development</div>
+                <div class="discription">株式会社EventHubへ入社後、カスタマーサポートチームの立ち上げからマネジメント、Biz Opsチームの立ち上げ、1-2週間で開発できるSmall開発のプロダクトマネジメント業務と兼務しながら技術を学ぶためにプロダクト開発エンジニアを行った。
+            </div>
+        </div>
+            <div class="carrer-wrapper">
+                <div class="year">2018</div>
+                <div class="position">Degital Marketing</div>
+                <div class="discription">株式会社コムテックへ入社後、大手外資IT企業へ常駐しデジタルマーケティング部の立ち上げとしてオンラインセミナー運営オペレーションを構築。年間150本のセミナーを運営。
+                </div>
+            </div>
+            <div class="carrer-wrapper">
+                <div class="year">2012</div>
+                <div class="position">Japanese Language Instructor</div>
+                <div class="discription">日本語学校で、大学や大学院に進学を希望している外国人留学生へ、初級〜上級の日本語を教える日本語教師に従事。
+                </div>
+            </div>
+        </section>
     </main>
     <script src="modal.js"></script>
 </body>
 
 </html>
-

@@ -17,13 +17,36 @@ main {
 }
 
 body {
-    background-image: url("background.png");
+    /* background-image: url("background.png"); */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: hsl(0, 0%, 100%);
     background-attachment: fixed;
+}
+
+#video-area{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+#video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 177.77777778vh; 
+    height: 56.25vw;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 p {
@@ -48,6 +71,7 @@ p {
     padding: 10px;
     position: absolute; 
     right: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .fa-qrcode:hover {
     background-color: #424242;
@@ -58,6 +82,7 @@ p {
 .my-picture {
     border-radius: 50%;
     margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .profile-wrapper {
@@ -73,9 +98,14 @@ p {
     position: relative;
 }
 
-.my-name {
-    font-size: 23px;
+.title {
+    font-size: 30px;
     color: #424242;
+}
+
+.title-wrapper {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
 }
 
 .content {
@@ -105,13 +135,14 @@ p {
     color: #333; 
     padding: 10px 20px;
     background:rgba(255, 255, 255, 0.93);
-    opacity: 0.8;
+    opacity: 0.9;
     text-decoration: none;
     outline: none;
     transition: all .3s;
     transition-delay: .2s;
     width: 100%;
     border: solid 1px #333;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 @media screen and (max-width:1024px) {
     .btn05:active {
@@ -238,11 +269,11 @@ p {
 	text-decoration: none;
 	color: #424242;
 	background-color: #fff;
-    opacity: 0.8;
+    opacity: 0.9;
 	border: 1px solid #424242;
 	border-radius: 2em;
     font-size: 13px;
-    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .tag:before {
 	content: "#";	
@@ -393,8 +424,48 @@ p {
 
 .qr-code-wrapper {
     margin-top: 30px;
+}
+
+
+.carrer-wrapper {
+    background-color: rgb(255, 255, 255,0.8);
+    padding: 10px 20px 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.carrer {
+    position: relative;
+    max-width: 480px;
+    margin: 60px auto 40px;
+}
+
+@media screen and (max-width:480px) {
+    .carrer {
+      max-width: 350px;
+    }
+  }
+
+.year {
+    font-size: 40px;
+    color: #424242;
+    border-bottom: 1px solid #1451b3;
+    font-family: "Barlow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.position {
+    font-size: 18px;
+    margin-bottom: 4px;
 
 }
+.discription {
+    font-size: 12px;
+    color: #8b8b8b;
+}
+
 
 
 

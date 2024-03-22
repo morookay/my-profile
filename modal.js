@@ -11,4 +11,3 @@ button.addEventListener('click', function() {
     this.classList.add('out');
     document.body.classList.remove('modal-active');
   });
-  
