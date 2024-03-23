@@ -99,14 +99,23 @@ p {
 }
 
 .title {
-    font-size: 30px;
+    font-size: 27px;
     color: #424242;
+    font-family: "Handlee", cursive;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.title-wrapper {
-    margin: 20px 0px 20px 0px;
-    text-align: center;
+.carrer-title {
+    font-size: 35px;
+    color: #424242;
+    font-family: "Handlee", cursive;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
+
 
 .content {
     max-width: 480px;
@@ -141,7 +150,8 @@ p {
     transition: all .3s;
     transition-delay: .2s;
     width: 100%;
-    border: solid 1px #333;
+    border-radius: 10px;
+    /* border: solid 1px #333; */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 @media screen and (max-width:1024px) {
@@ -160,7 +170,7 @@ p {
     display: block;
 }
 /*横線*/
-.btn05::before,
+/* .btn05::before,
 .btn05::after{
     content:""; 
     position: absolute;
@@ -168,9 +178,9 @@ p {
     height: 1px;
     background: #153138;
     transition: all 0.2s linear;
-}
+} */
 /*縦線*/
-.btn05 span::before,
+/* .btn05 span::before,
 .btn05 span::after{
     content:"";
     position: absolute;
@@ -206,7 +216,7 @@ p {
     left: 0;
     top: 0;
     transition-duration: 0.4s;
-}
+} */
 }
 
 .btn-content-wrapper {
@@ -430,7 +440,7 @@ p {
 .carrer-wrapper {
     background-color: rgb(255, 255, 255,0.8);
     padding: 10px 20px 20px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -448,9 +458,9 @@ p {
   }
 
 .year {
-    font-size: 40px;
+    font-size: 28px;
     color: #424242;
-    border-bottom: 1px solid #1451b3;
+    border-bottom: 1px solid #424242;
     font-family: "Barlow", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -469,3 +479,72 @@ p {
 
 
 
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: opacity 1s,visibility 1s, transform 1s;
+}
+
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.typing-animation1 {
+	width: 10ch;	/*文字の長さ*/
+	border-right: 1px solid #000;	/*点滅バー*/
+	overflow: hidden;	/*必須*/
+	white-space: nowrap;	/*必須*/
+	animation: typing 3s steps(18), blink .4s step-end infinite alternate;	/*アニメーション関連*/
+}
+.typing-animation2 {
+	width: 8ch;	/*文字の長さ*/
+	border-right: 1px solid #000;	/*点滅バー*/
+	overflow: hidden;	/*必須*/
+	white-space: nowrap;	/*必須*/
+	animation: typing 3s steps(18), blink .4s step-end infinite alternate;	/*アニメーション関連*/
+}
+.typing-animation3 {
+	width: 5ch;	/*文字の長さ*/
+	border-right: 1px solid #000;	/*点滅バー*/
+	overflow: hidden;	/*必須*/
+	white-space: nowrap;	/*必須*/
+	animation: typing 3s steps(18), blink .4s step-end infinite alternate;	/*アニメーション関連*/
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent;		/*点滅風に見せる*/
+	}
+}
+
+
+.blog-date {
+    border-bottom: 1px solid #424242;
+    font-size: 16px;
+    color: #424242;
+    margin-bottom: 4px;
+    margin-top: 18px;
+}
+
+.blog-title {
+    font-size: 14px;
+    color: #424242;
+    text-decoration: none;
+}
+
+.title-wrapper {
+    display: flex;
+}
+
+.blog-title:hover {
+    color: #55c5e0;
+    text-decoration: none;
+}
