@@ -79,6 +79,32 @@ p {
     cursor : pointer;
 }
 
+
+.fa-download {
+  color: #424242;
+  width: 50px;
+  height: 50px;
+  top: 35px;
+  margin-right: 25px;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute; 
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.fa-download:hover {
+  background-color: #424242;
+  color: #fff;
+  cursor : pointer;
+}
+
+
+
+
+
+
 .my-picture {
     border-radius: 50%;
     margin-bottom: 15px;
