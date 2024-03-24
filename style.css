@@ -483,6 +483,13 @@ p {
     }
   }
 
+  @media screen and (max-width:1024px) {
+    .carrer {
+      max-width: 699px;
+    }
+  }
+
+
 .year {
     font-size: 28px;
     color: #424242;
