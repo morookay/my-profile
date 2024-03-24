@@ -1,0 +1,14 @@
+BEGIN:VCARD
+CHARSET:UTF-8
+VERSION:3.0
+FN:諸岡 結衣子
+N:諸岡;結衣子;;
+X-PHONETIC-FIRST-NAME:ゆいこ
+X-PHONETIC-LAST-NAME:もろおか
+ORG:株式会社Facilo
+ROLE:CS Ops
+EMAIL;TYPE=WORK:yuiko.morooka@facilo.com
+URL: https://morookay.github.io/my-profile/
+TZ:+0900
+REV:20240307T222710Z
+END:VCARD
