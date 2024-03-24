@@ -477,18 +477,17 @@ p {
     margin: 60px auto 40px;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:1024px) {
+  .carrer {
+    max-width: 699px;
+  }
+}
+
+  @media screen and (max-width:480px) {
     .carrer {
       max-width: 350px;
     }
   }
-
-  @media screen and (max-width:1024px) {
-    .carrer {
-      max-width: 699px;
-    }
-  }
-
 
 .year {
     font-size: 28px;
