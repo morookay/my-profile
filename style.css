@@ -460,13 +460,14 @@ p {
 .year {
     font-size: 28px;
     color: #424242;
-    border-bottom: 1px solid #424242;
+    border-bottom: 1px solid #8b8b8b;
     font-family: "Barlow", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
 }
 
 .position {
+    color: #424242;
     font-size: 18px;
     margin-bottom: 4px;
 
@@ -501,14 +502,14 @@ p {
 	animation: typing 3s steps(18), blink .4s step-end infinite alternate;	/*アニメーション関連*/
 }
 .typing-animation2 {
-	width: 8ch;	/*文字の長さ*/
+	width: 10ch;	/*文字の長さ*/
 	border-right: 1px solid #000;	/*点滅バー*/
 	overflow: hidden;	/*必須*/
 	white-space: nowrap;	/*必須*/
 	animation: typing 3s steps(18), blink .4s step-end infinite alternate;	/*アニメーション関連*/
 }
 .typing-animation3 {
-	width: 5ch;	/*文字の長さ*/
+	width: 8ch;	/*文字の長さ*/
 	border-right: 1px solid #000;	/*点滅バー*/
 	overflow: hidden;	/*必須*/
 	white-space: nowrap;	/*必須*/
@@ -527,11 +528,14 @@ p {
 
 
 .blog-date {
-    border-bottom: 1px solid #424242;
+    border-bottom: 1px solid #8b8b8b;
     font-size: 16px;
-    color: #424242;
+    color: #8b8b8b;
     margin-bottom: 4px;
     margin-top: 18px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .blog-title {
